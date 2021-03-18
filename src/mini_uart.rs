@@ -48,7 +48,7 @@ pub struct MiniUart {
 impl MiniUart {
     /// Returns a new instance of `MiniUart`.
     #[inline]
-    pub fn new() -> MiniUart {
+    pub const fn new() -> MiniUart {
         let registers = unsafe { &mut *(MU_REG_BASE as *mut Registers) };
 
         MiniUart {

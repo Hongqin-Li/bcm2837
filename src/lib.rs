@@ -1,6 +1,8 @@
 #![no_std]
 #![feature(asm)]
 #![allow(unused_parens)]
+#![feature(const_raw_ptr_deref)]
+#![feature(const_mut_refs)]
 
 extern crate volatile;
 #[macro_use]
